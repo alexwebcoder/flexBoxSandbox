@@ -1,0 +1,27 @@
+/* flexbox has one primary and one secondary axis so it is a one-dimensional model.
+we have main axis and cross axis. if we only apply display: flex to the parent container, it will be on the main axis as a row by default.
+ flex items only flow in one direction and it is on the main axis
+ you can justify flex items in that one direction and align the spacing between the individual items along the cross axis*/
+
+ html {
+    background: #fff7f6;
+  }
+  
+  /*-- --*/
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 35rem;
+  }
+
+  .item {
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    padding: 3rem;
+    background: mistyrose;
+    border: 3px solid tomato;
+    color: tomato;
+    margin: 6px;
+  }
